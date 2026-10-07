@@ -5,35 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Japan Travel</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-        .navbar-custom {
-            background-color: #f9f9f99d;
-            padding: 2px 4px;
-            border-radius: 15px;
-        }
-
-        @media (min-width: 992px) {
-            .navbar-custom {
-                border-radius: 50rem;
-            }
-        }
-
-        .nav-link {
-            color: #333;
-            font-size: 14px;
-            font-weight: 500;
-            text-align: center;
-            padding: 10px 0;
-        }
-    </style>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 
 <body>
-
-    <header class="position-absolute top-0 start-0 end-0 z-4 mt-4">
+    <header class="position-absolute top-3 start-0 end-0 z-4 mt-4">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-custom shadow-sm">
                 <div class="container-fluid">
@@ -60,8 +37,8 @@
             </nav>
         </div>
     </header>
-    <section class="d-flex flex-column min-vh-100"
-        style="background-image: url('../images/fuji.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <section class="d-flex flex-column min-vh-100 mt-3 mx-4"
+        style="background-image: url('../images/fuji.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; border-radius: 15px 15px 15px 80px;">
 
     </section>
 
