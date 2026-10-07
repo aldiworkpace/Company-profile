@@ -18,6 +18,8 @@ class PaketTravel extends Model
         'durasi_hari',
         'harga',
         'deskripsi',
+        'fasilitas',
+        'rating',
         'image',
     ];
 }

@@ -18,6 +18,8 @@ return new class extends Migration
             $table->integer('durasi_hari');
             $table->integer('harga');
             $table->text('deskripsi');
+            $table->text('fasilitas');
+            $table->decimal('rating', 2, 1);
             $table->string('image');
             $table->timestamps();
         });
