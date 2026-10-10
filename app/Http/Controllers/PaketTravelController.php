@@ -14,4 +14,10 @@ class PaketTravelController extends Controller
 
         return view('page.travel', compact('paket_travels',));
     }
+    public function show($id)
+    {
+        $paket_travels = PaketTravel::findOrFail($id);
+
+        return view('page.paket-detail', compact('paket_travels'));
+    }
 }

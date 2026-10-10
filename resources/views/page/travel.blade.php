@@ -56,13 +56,12 @@
                                         <span class="fw-bold text-danger" style="font-size: 0.95rem;">Rp
                                             {{ number_format($paket->harga, 0, ',', '.') }}</span>
                                     </div>
-                                    <a href="#" class="btn btn-dark btn-sm rounded-pill px-3"
-                                        style="font-size: 0.75rem;">Detail</a>
+                                    <a href="{{ route('travel.show', $paket->id) }}"
+                                        class="btn btn-dark btn-sm rounded-pill px-3" style="font-size: 0.75rem;">Detail</a>
                                 </div>
 
                             </div>
                         </div>
-
                     </div>
                 @endforeach
             </div>

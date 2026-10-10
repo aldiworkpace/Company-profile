@@ -57,7 +57,7 @@
                         <p class="text-white">{{ $homes->cta_desc1 }}</p>
                     </div>
 
-                    <div class="rounded-5 p-4 text-start" style="background-color:#6b0202 ;">
+                    <div class="rounded-5 ms-4 p-4 text-start" style="background-color:#6b0202 ;">
                         <h4 class="text-white">{{ $homes->cta_judul_2 }}</h4>
                         <i class="bi-airplane-fill text-white fs-4"></i>
                         <p class="text-white">{{ $homes->cta_desc2 }}</p>
@@ -68,6 +68,10 @@
                         <p class="text-white">{{ $homes->cta_desc3 }}</p>
                     </div>
 
+                    <div class="rounded-5 p-2 text-center" style="background-color:#1b1b1b ;">
+                        <a href="https://wa.me/6285776937806" class="text-white fs-4" style="text-decoration: none;">
+                            Tanya Via Whatsapp</a><i class="bi bi-whatsapp mx-2 text-white fs-4"></i>
+                    </div>
                 </div>
             </div>
         </div>

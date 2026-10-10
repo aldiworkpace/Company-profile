@@ -13,9 +13,13 @@ class Contact extends Model
     protected $table = 'contacts';
 
     protected $fillable = [
-        'deskripsi_1',
-        'deskripsi_2',
-        'image_1',
+        'email',
+        'instagram',
+        'tiktok',
+        'telephone',
+        'alamat',
+        'image',
         'image_2',
+        'image_3',
     ];
 }

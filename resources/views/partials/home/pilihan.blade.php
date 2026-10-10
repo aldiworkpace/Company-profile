@@ -1,11 +1,11 @@
 <section class="py-5 min-vh-100 mx-0 mx-md-5 mt-3" style="background-color:#1b1b1b; border-radius: 0px 60px 0px 20px;">
     <div class="position-relative w-100" style="height: 0; z-index: 0;">
         <img src="{{ asset('images/assets/decor.png') }}" class="position-absolute"
-            style="top: -150px; left: 1%; max-width: 400px;">
+            style="top: -160px; left: 8%; max-width: 400px;">
     </div>
     <div class="container">
         <div class="d-flex align-items-center justify-content-center mb-4 gap-5">
-            <h1 class="fw-lighter text-danger">Paket Wisata Kami</h1>
+            <h1 class="fw-lighter text-danger">Paket Wisata Terbaru Kami</h1>
         </div>
         <div class="row">
             @foreach ($paket_travels as $paket)
@@ -51,8 +51,8 @@
                                     <span class="fw-bold text-danger" style="font-size: 0.95rem;">Rp
                                         {{ number_format($paket->harga, 0, ',', '.') }}</span>
                                 </div>
-                                <a href="#" class="btn btn-dark btn-sm rounded-pill px-3"
-                                    style="font-size: 0.75rem;">Detail</a>
+                                <a href="{{ route('travel.show', $paket->id) }}"
+                                    class="btn btn-dark btn-sm rounded-pill px-3" style="font-size: 0.75rem;">Detail</a>
                             </div>
 
                         </div>
