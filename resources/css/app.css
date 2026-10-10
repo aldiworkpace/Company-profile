@@ -43,3 +43,13 @@ html, body {
     color: #ba0c0c !important;
 }
 
+
+.cta-img {
+    height: 300px;
+}
+
+@media (min-width: 768px) {
+    .cta-img {
+        height: 700px;
+    }
+}

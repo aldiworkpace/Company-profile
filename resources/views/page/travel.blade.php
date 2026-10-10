@@ -3,6 +3,10 @@
 @section('title', 'Paket Travel')
 
 @section('content')
+    <div class="position-relative w-100" style="height: 0; z-index: -1;">
+        <img src="{{ asset('images/assets/decor2.png') }}" class="position-absolute"
+            style="top: -90px; left: 68%; max-width: 450px;">
+    </div>
     <section class="py-5 min-vh-100 mx-0 mx-md-5 mt-3">
         <div class="container">
             <div class="d-flex align-items-center justify-content-center mb-4 gap-5">

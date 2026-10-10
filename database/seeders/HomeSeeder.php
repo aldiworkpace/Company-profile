@@ -29,6 +29,8 @@ class HomeSeeder extends Seeder
                 'image_1' => 'home1.jpg',
                 'image_2' => 'home2.jpg',
                 'image_3' => 'cta.jpg',
+                'image_4' => 'cta2.jpg',
+                'image_5' => 'cta3.jpg',
             ]
         ];
         foreach ($homes as $home) {
