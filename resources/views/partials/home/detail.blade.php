@@ -1,4 +1,4 @@
-<section class="py-5 min-vh-100 mx-0 mx-md-5 mt-3" style="background-color:#1b1b1b; border-radius: 0px 60px 0px 120px;">
+<section class="py-5 min-vh-100 mx-0 mx-md-5 mt-3" style="background-color:#1b1b1b; border-radius: 0px 60px 0px 20px;">
     <div class="container">
         <div class="d-flex align-items-center justify-content-center mb-4 gap-5">
             <h1 class="fw-lighter text-danger">Paket Wisata Kami</h1>

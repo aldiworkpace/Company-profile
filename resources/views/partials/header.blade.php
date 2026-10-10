@@ -8,8 +8,8 @@
 
             <div class="collapse navbar-collapse align-items-center" id="navbarContent">
                 <ul class="navbar-nav w-100 justify-content-evenly">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Paket Travel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('/travel') }}">Paket Travel</a></li>
                 </ul>
 
                 <a class="navbar-brand d-none d-lg-block mx-lg-4 fs-5 text-danger fw-semibold" href="#">Japan

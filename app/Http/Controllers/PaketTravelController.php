@@ -8,10 +8,10 @@ use Illuminate\Http\Request;
 class PaketTravelController extends Controller
 {
     //
-    // public function index()
-    // {
-    //     $paket_travels = PaketTravel::paginate(4);
+    public function index()
+    {
+        $paket_travels = PaketTravel::paginate(4);
 
-    //     return view('page.home', compact('paket_travels',));
-    // }
+        return view('page.travel', compact('paket_travels',));
+    }
 }

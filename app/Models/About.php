@@ -13,10 +13,19 @@ class About extends Model
     protected $table = 'abouts';
 
     protected $fillable = [
-        'judul',
         'deskripsi_1',
         'deskripsi_2',
+        'deskripsi_3',
+        'cta_judul_1',
+        'cta_judul_2',
+        'cta_judul_3',
+        'cta_desc1',
+        'cta_desc2',
+        'cta_desc3',
+        'hero_image',
         'image_1',
         'image_2',
+        'image_3',
+
     ];
 }

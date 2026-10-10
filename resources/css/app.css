@@ -39,3 +39,7 @@ html, body {
     color: #c8b39a;
 }
 
+.nav-link:active {
+    color: #ba0c0c !important;
+}
+
