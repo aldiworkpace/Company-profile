@@ -4,11 +4,16 @@
 
 @section('content')
     <div class="position-relative w-100" style="height: 0; z-index: -1;">
-        <img src="{{ asset('images/assets/decor2.png') }}" class="position-absolute"
-            style="top: 200px; left: 72%; max-width: 400px;">
+        <img src="{{ asset('images/assets/decor4.png') }}" class="position-absolute"
+            style="top: 300px; left: 72%; max-width: 400px;">
     </div>
     <section class="py-5 min-vh-100">
         <div class="container">
+            <div class="mb-4 ">
+                <a href="{{ route('travel.index') }}" class="btn bg-dark text-white btn-outline-secondary btn-sm">
+                    &larr; Kembali ke Daftar Paket
+                </a>
+            </div>
             <div class="row g-5">
                 <div class="col-lg-8">
                     <div class="position-relative mb-4 overflow-hidden shadow-sm" style="height: 450px;">

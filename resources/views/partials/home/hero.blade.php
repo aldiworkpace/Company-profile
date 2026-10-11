@@ -6,8 +6,9 @@
              <div class="col-md-5 ps-4 ps-md-5 ms-md-5">
                  <p class="fw-bold text-white fs-4 mb-0">Welcome To</p>
                  <p class="fw-bolder text-white" style="font-size: 80px; letter-spacing: 8px;">JAPAN</p>
-                 <a href="#start" class="btn bg-white px-4 py-2" style="border-radius: 20px 20px;"> Mulai Sekarang
-                     <i class="bi bi-arrow-up-right-circle-fill"></i></a>
+                 <a href="#start" class="btn btn-hero-hover px-4 py-2 shadow-sm fw-bold">
+                     Mulai Sekarang <i class="bi bi-arrow-up-right-circle-fill"></i>
+                 </a>
              </div>
 
 

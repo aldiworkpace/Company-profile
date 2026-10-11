@@ -26,10 +26,11 @@
 
             <div class="col-md-6 p-4">
                 <div class="position-relative mx-auto" style="max-width: 450px;">
-                    <img src="{{ asset('images/assets/' . $homes->image_1) }}" class="img-fluid rounded w-75 mb-4"
-                        alt="Japan 1">
+                    <img src="{{ asset('images/assets/' . $homes->image_1) }}"
+                        class="content-image img-fluid rounded w-75 mb-4" alt="Japan 1">
                     <img src="{{ asset('images/assets/' . $homes->image_2) }}"
-                        class="img-fluid rounded shadow-lg position-absolute bottom-0 end-0 w-50" alt="Japan 2">
+                        class="img-fluid rounded shadow-lg position-absolute bottom-0 end-0 w-50 content-image"
+                        alt="Japan 2">
                 </div>
 
             </div>
