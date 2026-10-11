@@ -10,7 +10,7 @@
     <section class="py-5 min-vh-100 mx-0 mx-md-5 mt-3">
         <div class="container">
             <div class="d-flex align-items-center justify-content-center mb-4 gap-5">
-                <h1 class="fw-lighter text-danger">Paket Wisata Kami</h1>
+                <h1 class="fw-lighter text-danger">Paket Wisata</h1>
             </div>
             <div class="row">
                 @foreach ($paket_travels as $paket)

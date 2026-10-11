@@ -21,10 +21,13 @@ class AboutSeeder extends Seeder
                 'misi' => 'Menyediakan paket perjalanan ke Jepang yang beragam dan terjangkau untuk berbagai kebutuhan wisatawan. Menghadirkan Tour Leader bersertifikat dan berpengalaman yang mendampingi perjalanan dari awal hingga akhir. Menjalin kerja sama dengan maskapai, akomodasi, dan penyedia transportasi terpercaya demi kenyamanan dan keamanan pelanggan. Memberikan pelayanan yang responsif, informasi yang jelas, dan proses pemesanan yang mudah. Memperkenalkan keindahan alam, budaya, dan kuliner Jepang melalui itinerary yang terencana dengan baik.',
                 'desc_1' => 'Japan Travel hadir dengan komitmen memberikan pengalaman liburan ke Jepang yang aman, nyaman, dan berkesan. Keunggulan kami meliputi itinerary yang tersusun rapi, Tour Leader bersertifikat dan berpengalaman, akomodasi di lokasi strategis, serta harga transparan tanpa biaya tersembunyi. Tim kami juga siap membantu Anda sejak proses pemesanan, pengurusan dokumen perjalanan, hingga kepulangan, sehingga Anda bisa fokus menikmati setiap momen di Negeri Sakura.',
                 'desc_2' => 'Untuk menjamin kualitas perjalanan, kami menjalin kerja sama dengan berbagai maskapai penerbangan terpercaya, jaringan hotel dan penginapan pilihan, serta penyedia transportasi darat dan kereta di Jepang. Kemitraan ini memungkinkan kami menawarkan jadwal keberangkatan yang pasti, ketersediaan seat yang terjaga, dan penawaran harga terbaik bagi setiap pelanggan. Kami juga bekerja sama dengan pemandu lokal dan penyedia tiket atraksi wisata agar perjalanan Anda berjalan lancar dari awal hingga akhir.',
-                'hero_image' => '',
-                'image_1' => '',
-                'image_2' => '',
-                'image_3' => '',
+                'hero_image' => 'hero.jpg',
+                'image_1' => 'abt.jpg',
+                'image_2' => 'abt2.jpg',
+                'image_3' => 'abt3.jpg',
+                'image_4' => 'abt4.jpg',
+                'image_5' => 'abt5.jpg',
+                'image_6' => 'abt6.jpg',
             ]
 
         ];
