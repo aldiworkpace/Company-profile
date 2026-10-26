@@ -12,7 +12,7 @@ Website profil perusahaan (company profile) dan katalog tur perjalanan wisata ke
 
 ## Tech Stack
 
-- **Backend**: Laravel 12, PHP 8.3+
+- **Backend**: Laravel 13, PHP 8.3+
 - **Frontend**: Blade, Bootstrap 5.3, Bootstrap Icons, Vite
 - **Database**: MySQL
 
