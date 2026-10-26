@@ -1,58 +1,125 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Japan Travel
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Website profil perusahaan (company profile) dan katalog tur perjalanan wisata ke Jepang berbasis Laravel. Project ini dibuat untuk kebutuhan praktikum dengan fitur utama berupa katalog paket perjalanan, informasi detail paket tur, profil biro perjalanan, serta informasi kontak.
 
-## About Laravel
+## Fitur
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **Beranda**: Menampilkan highlight paket wisata pilihan dan ringkasan layanan biro perjalanan.
+- **Katalog Paket Wisata**: Daftar paket perjalanan dengan paginasi, rincian harga, durasi, destinasi, rating, dan fasilitas.
+- **Detail Paket Wisata**: Informasi lengkap mengenai itinerary dan deskripsi paket, fasilitas yang didapat, serta tombol konsultasi via WhatsApp.
+- **Tentang Kami**: Informasi visi, misi, dan profil perusahaan.
+- **Kontak**: Halaman narahubung mencakup alamat kantor, email, telepon, media sosial, dan formulir pesan.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Tech Stack
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Backend**: Laravel 12, PHP 8.3+
+- **Frontend**: Blade, Bootstrap 5.3, Bootstrap Icons, Vite
+- **Database**: MySQL
 
-## Learning Laravel
+## Prasyarat
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Pastikan software berikut sudah terpasang di sistem:
+- PHP >= 8.3
+- Composer
+- Node.js & NPM
+- MySQL Server (Laragon / XAMPP / Native)
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Instalasi
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+1. Masuk ke direktori project:
+   ```bash
+   cd c:/laragon/www/project-praktikum
+   ```
 
-## Agentic Development
+2. Install dependensi PHP:
+   ```bash
+   composer install
+   ```
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+3. Install dependensi frontend:
+   ```bash
+   npm install
+   ```
 
+4. Salin file environment:
+   ```bash
+   cp .env.example .env
+   ```
+
+5. Sesuaikan konfigurasi database pada `.env`:
+   ```env
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=travel
+   DB_USERNAME=root
+   DB_PASSWORD=
+   ```
+   *Pastikan database dengan nama `travel` sudah dibuat di MySQL.*
+
+6. Generate application key:
+   ```bash
+   php artisan key:generate
+   ```
+
+7. Jalankan migrasi dan seeder:
+   ```bash
+   php artisan migrate --seed
+   ```
+
+## Menjalankan Aplikasi
+
+Jalankan server Laravel:
 ```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
+php artisan serve
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+Di terminal terpisah, jalankan Vite:
+```bash
+npm run dev
+```
 
-## Contributing
+Aplikasi dapat diakses melalui browser di `http://127.0.0.1:8000`.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Struktur Database
 
-## Code of Conduct
+- `paket_travels`: Data paket wisata (nama paket, destinasi, durasi hari, harga, deskripsi, fasilitas, rating, nama file gambar).
+- `homes`: Data teks deskripsi dan aset visual halaman beranda.
+- `abouts`: Data visi, misi, deskripsi profil, dan galeri perusahaan.
+- `contacts`: Data email, telepon, akun media sosial, dan alamat kantor.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Rute Aplikasi
 
-## Security Vulnerabilities
+| Method | URL | Nama Rute | Controller Action |
+|---|---|---|---|
+| GET | `/` | home | HomeController@index |
+| GET | `/travel` | travel.index | PaketTravelController@index |
+| GET | `/travel/{id}` | travel.show | PaketTravelController@show |
+| GET | `/about` | about.index | AboutController@index |
+| GET | `/contact` | contact.index | ContactController@index |
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Struktur Folder Utama
 
-## License
+```text
+app/
+  ├── Http/Controllers/   # HomeController, PaketTravelController, AboutController, ContactController
+  └── Models/             # PaketTravel, Home, About, Contact
+database/
+  ├── migrations/         # Skema tabel database
+  └── seeders/            # Seeder data awal
+public/
+  └── images/             # Asset gambar paket tur dan halaman
+resources/
+  ├── css/                # Styling (Bootstrap & app.css)
+  ├── js/                 # Inisialisasi JavaScript
+  └── views/
+      ├── layouts/        # Layout utama (app.blade.php)
+      ├── partials/       # Komponen navbar, footer, dan sections
+      └── page/           # View halaman (home, travel, paket-detail, about, contact)
+routes/
+  └── web.php             # Routing aplikasi web
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Lisensi
+
+Proyek ini dilisensikan di bawah MIT License.
