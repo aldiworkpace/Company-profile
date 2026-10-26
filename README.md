@@ -120,6 +120,10 @@ routes/
   └── web.php             # Routing aplikasi web
 ```
 
+## Pengembang
+
+- Aldi Rizki Bagus Anggoro ([GitHub](https://github.com/aldiworkpace))
+
 ## Lisensi
 
 Proyek ini dilisensikan di bawah MIT License.
